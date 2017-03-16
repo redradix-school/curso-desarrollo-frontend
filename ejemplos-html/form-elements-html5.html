@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		*{padding: 0px; margin: 0px;}
+		body{font-family: Arial, Helvetica, sans-serif;}
+		.wrapper{width: 450px; margin: 0 auto; padding-bottom: 80px;}
+		h2{font-size: 22px; line-height: 24px; padding: 40px 0 10px 0;}
+		p{font-size: 16px; padding-bottom: 10px;}
+		form{width:220px; padding: 20px 20px 10px 20px; margin: 14px 0 34px 0; border:#ccc 1px solid;
+			 -webkit-border-radius:6px; -moz-border-radius:6px; -ms-border-radius:6px; -o-border-radius:6px;
+			 border-radius:6px;
+			 -webkit-box-shadow:4px 4px 8px 1px #888; -moz-box-shadow:4px 4px 8px 1px #888; -ms-box-shadow:4px 4px 8px 1px #888; -o-box-shadow:4px 4px 8px 1px #888;
+			 box-shadow:4px 4px 8px 1px #888;}
+		label{display: block; font-size: 14px; font-weight: bold;}
+		input{display: block; margin-bottom: 14px; height: 20px; width: 200px;}
+		input[type="range"]{position: relative; color:#555; font-size:11px; font-weight: bold;}
+		input[type="range"]::before {content: attr(min); position: absolute; top: 2px; left: -10px;}
+		input[type="range"]::after {content: attr(max); position: absolute; top: 2px; right: -18px;}
+		input[type="submit"]{width: auto;}
+		progress, meter{display: block; width: 200px; margin-bottom: 10px; height: 20px;}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+
+
+
+	<h2>Ejemplo de formulario de registro</h2>
+	<p>Uso de <em>input</em> de los tipos <em>text</em>, <em>email</em>, <em>url</em> y <em>tel</em>, y del atributo <em>required</em></p>
+	<form class="form-01">
+ 		<label for="form01-name">Nombre</label>
+		<input id="form01-name" type="text" required />
+		<label for="form01-email">Email</label>
+		<input id="form01-email" type="email" required />
+		<label for="form01-url">Sitio web</label>
+		<input id="form01-url" type="url" />
+		<label for="form01-tel">Tel&eacute;fono</label>
+		<input id="form01-tel" type="tel" />
+		<input type="submit" value="Registrarse" />
+	</form>
+
+
+
+	<h2>Campo de b&uacute;squeda</h2>
+	<p>Uso de <em>input</em> del tipo <em>search</em> y del atributo <em>placeholder</em></p>
+	<form class="form-02">
+		<input type="search" placeholder="T&eacute;rmino de b&uacute;squeda" />
+	</form>
+
+
+
+	<h2>Campos de selecci&oacute;n num&eacute;rica</h2>
+	<p>Uso de <em>input</em> de los tipos <em>number</em> y <em>range</em>, y los atributos <em>min</em>, <em>max</em> y <em>step</em></p>
+	<form class="form-03">
+		<input type="number" min="10" max="50" step="10" />
+	</form>
+	<form class="form-04" id="form4">
+		<input type="range" min="1" max="10" />
+	</form>
+
+
+
+	<h2>Campos de selecci&oacute;n de fechas/horas</h2>
+	<p>Uso de <em>input</em> de los tipos <em>date</em>, <em>time</em>, <em>month</em> y <em>week</em></p>
+	<form class="form-06">
+		<input type="date" />
+		<input type="time" />
+		<input type="month" />
+		<input type="week" />
+	</form>
+
+
+
+
+</div>
+</body>
+
+</html>

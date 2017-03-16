@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+html, body { margin: 0; padding: 0;}
+
+
+body{
+    font-family: Arial;
+}
+
+.container{
+	width: 500px;
+	margin: 80px auto;
+}
+
+
+@-webkit-keyframes mycoloranimation{
+    0%     {background: #ff0;}
+    50%    {background: #ccc;}
+    100%   {background: #f0f;}
+}
+
+@-keyframes mycoloranimation{
+    0%     {background: #ff0;}
+    50%    {background: #ccc;}
+    100%   {background: #f0f;}
+}
+
+@-webkit-keyframes mypositionanimation{
+    0%     {left: 0;}
+    50%    {left: 200px;}
+    100%   {left: 0;}
+}
+
+@keyframes mypositionanimation{
+    0%     {left: 0;}
+    50%    {left: 200px;}
+    100%   {left: 0;}
+}
+
+.box1{
+    width: 180px;
+    height: 120px;
+    padding: 20px;
+    background: #f00;
+    position: relative;
+    /*-webkit-animation: mycoloranimation 5s infinite;
+    animation: mycoloranimation 5s infinite;*/
+    -webkit-animation: mycoloranimation 5s 2, mypositionanimation 10s;
+    animation: mycoloranimation 5s 2, mypositionanimation 10s;
+
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1"></div>
+	</div>
+
+</body>
+</html>

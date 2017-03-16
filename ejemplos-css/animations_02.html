@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+html, body { margin: 0; padding: 0;}
+
+
+body{
+    font-family: Arial;
+}
+
+.wrapper{
+	width: 500px;
+	margin:50px auto;
+}
+
+@-webkit-keyframes position{
+    from   {
+        transform:rotate(0deg);
+    }
+    to  {
+        transform:rotate(360deg);
+    }
+}
+
+.box{
+    background: #f00;
+    width: 2px;
+    height: 120px;
+    border:#dadada 1px solid;
+    position: relative;
+    left: 0;
+    -webkit-animation: position 2s infinite linear;
+}
+
+.transitioned{
+	left:200px;
+}
+
+
+</style>
+</head>
+<body>
+
+	<div class="wrapper">
+
+    	<div class="box"></div>
+
+    </div>
+
+</body>
+</html>

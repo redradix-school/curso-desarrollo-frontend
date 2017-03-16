@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+html, body { margin: 0; padding: 0;}
+
+
+body{
+    font-family: Arial;
+}
+
+.box{
+    background: rgba(255,0,0,0.3);
+    width: 180px;
+    height: 120px;
+    padding: 20px;
+    margin: 40px auto;
+    border:#dadada 1px solid;
+}
+
+.large{
+	width: 300px;
+}
+
+.gradient1{
+    background: linear-gradient(#f00, rgba(0,0,0,0));
+}
+
+.gradient2{
+    background: linear-gradient(to right, #0f0, #ff0);
+}
+.gradient3{
+    background: linear-gradient(to top right, #0f0, #ff0);
+}
+.gradient4{
+    background: linear-gradient(180deg, #0f0, #ff0);
+}
+.gradient5{
+    background: linear-gradient(to right, #0f0, #ff0, #ddaa00, #ff0000);
+}
+.gradient6{
+    background: linear-gradient(to right, #0f0, #ff0 10%);
+}
+
+.gradient7{
+    background: radial-gradient(#0f0, #ff0); /*ellipse*/
+}
+.gradient8{
+    background: radial-gradient(circle closest-side, #f00, #ff0);
+}
+
+</style>
+</head>
+<body>
+
+    <div class="box gradient1"></div>
+	<div class="box gradient2"></div>
+	<div class="box gradient3"></div>
+	<div class="box gradient4"></div>
+	<div class="box gradient5"></div>
+	<div class="box gradient6"></div>
+	<div class="box large gradient7"></div>
+	<div class="box large gradient8"></div>
+
+</body>
+</html>

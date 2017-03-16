@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+</head>
+<body>
+
+
+<video width="480" height="360" controls >
+
+    <source src="videodemo.mp4"  type="video/mp4">
+    <source src="videodemo.ogg"  type="video/ogg">
+
+    <!-- Fallback para navegadores que no soportan la funcionalidad de la etiqueta <video> -->
+    <object width="640" height="360" type="application/x-shockwave-flash" data="player.swf">
+        <param name="movie" value="player.swf">
+        <param name="flashvars" value="videodemo.mp4">
+
+        <a href="trailer.mp4">
+            <img src="poster.jpg" alt="Descarga el video">
+        </a>
+    </object>
+
+</video>
+
+
+
+</body>
+</html>

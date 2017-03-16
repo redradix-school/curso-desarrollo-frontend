@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+html, body { margin: 0; padding: 0;}
+
+
+body{
+    font-family: Arial;
+}
+
+.caja{
+    background: rgba(255,0,0,0.3);
+    width: 200px;
+    height: 180px;
+    padding: 20px;
+    margin: 40px;
+
+    /*
+    Shortcuts:
+    padding: 20px 10px 5px 30px; --> top right bottom left
+    padding: 20px 10px 5px; --> top (right-left) bottom
+    padding: 20px 10px; --> (top-bottom) (right-left)
+    padding: 20px; --> All
+    */
+}
+
+.c2{
+    height: 140px;
+}
+
+.c3{
+    height: 130px;
+    overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="caja">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum amet reiciendis eos praesentium! Molestiae, minima, ratione, explicabo sit cumque totam iusto repellat dolor voluptas quaerat asperiores repudiandae in qui.</span>
+    </div>
+
+    <div class="caja c2">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum amet reiciendis eos praesentium! Molestiae, minima, ratione, explicabo sit cumque totam iusto repellat dolor voluptas quaerat asperiores repudiandae in qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+    </div>
+
+
+    <div class="caja c3">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum amet reiciendis eos praesentium! Molestiae, minima, ratione, explicabo sit cumque totam iusto repellat dolor voluptas quaerat asperiores repudiandae in qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+    </div>
+
+</body>
+</html>

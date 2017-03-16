@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+html, body, p {
+	margin: 0;
+	padding: 0;
+}
+
+.case{
+	padding: 20px 0 30px;
+}
+
+h1{
+	font-size: 24px;
+}
+
+.h1 p{
+	background: #ddd;
+	text-align: center;
+}
+
+.h2 div{
+	background: #0f0;
+	padding: 20px 0;
+}
+
+.h2 p{
+	background: #ddd;
+	width: 200px;
+	margin: auto;
+}
+
+.v1 p{
+	background: #ddd;
+	width: 500px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.v2 p{
+	background: #ddd;
+	width: 500px;
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.v3 div{
+	padding: 20px 0;
+	overflow: hidden;
+}
+.v3 p{
+	background: #ddd;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	margin: 0 10px;
+}
+
+.v3 span{
+	height: 200px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.v4 div{
+	background: #0f0;
+	height: 400px;
+	position: relative;
+}
+.v4 p{
+	background: #ddd;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	margin-top:-75px; 
+}
+
+.v5 div{
+	background: #0f0;
+	height: 400px;
+	position: relative;
+}
+.v5 p{
+	background: #ddd;
+	width: 150px;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="case h1">
+	<h1>Centrar un texto horizontalmente</h1>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+</div>
+
+<div class="case h2">
+	<h1>Centrar una caja horizontalmente</h1>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+</div>
+
+<div class="case v1">
+	<h1>Centrar un texto de una sola línea verticalmente</h1>
+	<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<div class="case v2">
+	<h1>Centrar un texto de varias líneas verticalmente cambiando su display</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laboriosam, distinctio, ipsa iure labore libero numquam, ab est assumenda delectus eum!</p>
+</div>
+
+<div class="case v3">
+	<h1>Centrar un texto de varias líneas verticalmente sin cambiar su display</h1>
+	<div>
+		<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></p>
+		<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></p>
+		<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></p>
+	</div>
+</div>
+
+<div class="case v4">
+	<h1>Centrar una caja dentro de otra conociendo su altura</h1>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+	</div>
+</div>
+
+<div class="case v5">
+	<h1>Centrar una caja dentro de otra sin conocer su altura</h1>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laboriosam, distinctio, ipsa iure labore libero numquam,</p>
+	</div>
+</div>
+
+</body>
+</html>
